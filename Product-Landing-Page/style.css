@@ -1,0 +1,139 @@
+body {
+  font-family: "Kiwi Maru", serif;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 900;
+  background-image: url("https://st2.depositphotos.com/4187197/7773/v/950/depositphotos_77733832-stock-illustration-gray-background-wavy-lines-crossing.jpg");
+}
+#header-img {
+  width: 20vw;
+}
+#nav-div {
+  font-size: 1.5vw;
+  
+}
+nav ul{
+  margin-left: 55vw;
+}
+li,
+i {
+  margin: 10px;
+}
+
+nav select {
+  display: none !important;
+}
+@media (max-width: 960px) {
+  #header-img {
+    width: 50vw;
+  }
+  nav ul {
+    display: none !important;
+  }
+  nav select {
+    display: inline-block !important;
+    color: rgb(41, 113, 207) !important;
+    border-radius: 10px;
+    margin-top: 10vw;
+    margin-left: 28vw;
+    font-size: 3vw;
+    width: 15vw;
+  }
+}
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr, 1fr, 1fr;
+  border: 5px groove black;
+  border-radius: 15px;
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.gallery__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.gallery__item--1 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+.gallery__item--2 {
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+.gallery__item--3 {
+  grid-column-start: 5;
+  grid-column-end: 7;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+.gallery__item--4 {
+  grid-column-start: 7;
+  grid-column-end: 9;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+.gallery__item--5 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 5;
+}
+.gallery__item--6 {
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 3;
+  grid-row-end: 5;
+}
+
+.gallery__item--7 {
+  grid-column-start: 5;
+  grid-column-end: 7;
+  grid-row-start: 3;
+  grid-row-end: 5;
+}
+
+.gallery__item--8 {
+  grid-column-start: 7;
+  grid-column-end: 9;
+  grid-row-start: 3;
+  grid-row-end: 5;
+}
+
+#container {
+  box-sizing: border-box;
+  display: grid;
+  row-gap: 250px;
+  grid-template-areas:
+    "header header header"
+    "content content content"
+    "content2 content2 content2"
+    "footer footer footer";
+}
+#header {
+  display: flex;
+  grid-area: header;
+  position: fixed;
+}
+
+#content {
+  display: inline-block;
+  width: 75vw;
+  grid-area: content;
+  justify-self: center;
+  border: 5px;
+}
+#content2 {
+  grid-area: content2;
+  justify-self: center;
+}
+
+#footer {
+  display: block;
+  grid-area: footer;
+  justify-self: center;
+
+  width: 30vw;
+}

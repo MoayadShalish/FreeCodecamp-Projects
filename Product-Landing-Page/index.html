@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru&family=Open+Sans&display=swap" rel="stylesheet">
+    <title>Yalla Akarat</title>
+</head>
+
+<body class="container-fluid">
+    <div id="container">
+        <header id="header">
+            <div>
+                <img src="/img/yalla.jpg" alt="company logo" id="header-img">
+            </div>
+            <div id="nav-div">
+                <nav id="nav-bar" >
+                    <ul  class="nav">
+                        <li class="nav-item">
+                            <a class="nav-link " href="#gallery">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#content2">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="#footer">Contact</a>
+                        </li>
+                    </ul>
+                    <select name="nav">
+                        <option value="#gallery">Gallery</option>
+                        <option value="#content2">About</option>
+                        <option value="#footer">Contact</option>
+                    </select>
+                </nav>
+            </div>
+
+        </header>
+
+        <div id="content">
+
+            <div class="gallery" id="gallery">
+                <figure class="gallery__item gallery__item--1">
+                    <img src="/img/a2431b93-a489-4478-911c-fd8df25ea033.jpg" class="gallery__img" alt="Image 1">
+                </figure>
+                <figure class="gallery__item gallery__item--2">
+                    <img src="/img/1fad8a3b-3f7f-4786-86d2-0846aa5f3993.jpg" class="gallery__img" alt="Image 2">
+                </figure>
+                <figure class="gallery__item gallery__item--3">
+                    <img src="/img/2da2ca4b-1067-4855-a7fe-992e8a2abf3d.jpg" class="gallery__img" alt="Image 3">
+                </figure>
+                <figure class="gallery__item gallery__item--4">
+                    <img src="/img/38b8aba8-f10f-4eb3-a75b-b41207c79030.jpg" class="gallery__img" alt="Image 4">
+                </figure>
+                <figure class="gallery__item gallery__item--5">
+                    <img src="/img/7add81c2-862f-41c8-8a9e-31d57d446d45.jpg" class="gallery__img" alt="Image 5">
+                </figure>
+                <figure class="gallery__item gallery__item--6">
+                    <img src="/img/428a020b-f3f9-4f9c-a703-db7aa50304e8.jpg" class="gallery__img" alt="Image 6">
+                </figure>
+                <figure class="gallery__item gallery__item--7">
+                    <img src="/img/WhatsApp Image 2020-06-11 at 8.53.12 PM (1).jpeg" class="gallery__img" alt="Image 7">
+                </figure>
+                <figure class="gallery__item gallery__item--8">
+                    <img src="/img/69384931_2344376569213143_5432844109989543936_n.jpg" class="gallery__img"
+                        alt="Image 8">
+                </figure>
+            </div>
+
+
+        </div>
+        <div id="content2">
+
+            <iframe id="video" style="width: 75vw; height: 40vw;" src="https://www.youtube.com/embed/XoGhXHLfq4M"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+        <footer id="footer">
+
+            <div class="footer-form ">
+                <h4 style="font-weight: bold;">Contact Us</h4>
+                <form id="form" action="https://www.freecodecamp.com/email-submit">
+                    <div class="form-group">
+                        <label for=""></label>
+                        <input type="email" maxlength="50" size="50" class="form-control" name="email" id="email"
+                            aria-describedby="emailHelpId" placeholder="Your Email"
+                            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+                        <input type="submit" id="submit" class="btn btn-primary"></input>
+                    </div>
+                </form>
+
+
+            </div>
+        </footer>
+    </div>
+
+</body>
+
+</html>
